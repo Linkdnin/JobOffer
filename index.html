@@ -1,2 +1,92 @@
-<h1>Login Test</h1>
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Job Offer – Secure Access</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #e3edf7, #cfd9e8);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .login-wrapper {
+      background: #ffffff;
+      padding: 40px 35px;
+      width: 380px;
+      border-radius: 12px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+      text-align: center;
+    }
+
+    h2 {
+      margin-top: 0;
+      color: #333;
+      font-weight: 600;
+      margin-bottom: 25px;
+    }
+
+    input {
+      width: 100%;
+      padding: 12px;
+      margin: 12px 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background: #0073b1;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      font-size: 15px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    button:hover {
+      background: #005f91;
+    }
+
+    .footer-note {
+      margin-top: 18px;
+      font-size: 12px;
+      color: #666;
+      line-height: 1.4;
+    }
+  </style>
+
+  <script>
+    function goToLoading() {
+      window.location.href = "loading.html";
+    }
+  </script>
+</head>
+
+<body>
+
+  <div class="login-wrapper">
+    <h2>Sign In to View Offer</h2>
+
+    <input type="text" placeholder="Username (not collected)">
+    <input type="password" placeholder="Password (not collected)">
+
+    <button onclick="goToLoading()">Sign In</button>
+
+    <div class="footer-note">
+      This page is part of an academic cybersecurity exercise.<br>
+      No information entered here is saved or transmitted.
+    </div>
+  </div>
+
+</body>
+</html>
+
 
